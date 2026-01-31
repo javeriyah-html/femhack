@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+     <!-- custom css link -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<style>
+   .image{
+    width: 100% !important;
+    height: 100% !important;
+   }
+
+   .text{
+    padding-top: 90px;
+   }
+
+   @media(max-width:1000px){
+    .text{
+      flex-direction: column !important;
+      
+    }
+
+    
+   .logos{
+    flex-wrap: wrap !important;
+   }
+   }
+
+   @media(max-width:970px){
+    .text{
+      padding-top: 0px !important;
+      margin-left: -10px !important;
+    }
+
+    .img{
+      margin-left: -20px !important;
+    }
+   }
+
+   @media(max-width:770px){
+      .recipes{
+        flex-direction: column !important;
+      }
+   }
+
+   @media(max-width:1110px){
+    .live{
+      flex-wrap: wrap !important;
+    }
+   }
+
+   @media(max-width:900px){
+       .cards{
+        flex-wrap: wrap !important;
+       }
+
+       .clovin{
+        margin-left: auto !important;
+       }
+   }
+
+   @media(max-width:700px){
+     .growth, .cards, .clovin{
+      margin-left: auto !important;
+      padding-left: 20px !important;
+   }
+
+   .clovin{
+    width: auto !important;
+   }
+  }
+
+  @media(max-width:1110px){
+    .fourcards, .cardser1, .cardser2, .social{
+      flex-wrap: wrap !important;
+      gap: 2em;
+    }
+  }
+
+  @media(max-width:980px){
+    .platforms{
+      flex-direction: column !important;
+    }
+  }
+
+  @media(max-width:580px){
+    .image{
+      max-width: 600px!important;
+    }
+  }
+
+  @media(max-width:980px){
+    .works{
+      width: 100% !important;
+    }
+  }
+
+
+  @media(max-width:780){
+   .product{
+    display: none !important;
+   }
+  }
+
+  @media(max-width:950px){
+    .data{
+       flex-wrap: wrap !important;
+    }
+  }
+
+  @media(max-width:1000px){
+    .shop{
+        flex-direction: column !important;
+    }
+
+    .contents{
+       max-width: 100% !important;
+    }
+
+    .comple{
+        max-width: 100% !important;
+    }
+  }
+</style>
+
+<body>
+    
+  <!-- head section start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-xxl">
+    <a class="navbar-brand" href="#"><img src="./image/logo.png" alt="">&nbsp;embedsocial</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" >
+      <ul class="navbar-nav mx-auto ">
+        <li class="nav-item dropdown">
+          <a class="nav-link btn dropdown-toggle" aria-current="page" href="#" style="color: black;">Platform</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black;">Widgets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black;">Tempelates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black;">Pricing</a>
+        </li>
+      </ul>
+
+      <a class="btn rounded-1 "href="#" role="button">Login</a>
+      <button type="button" class=" rounded-1 btn btn-primary">Start Free Trial</button>
+    </div>
+  </div>
+</nav> 
+
+<!-- head section end -->
+
+<!--hero section start-->
+
+   <div class="container-xxl">
+    <div class="container-xxl" style="background-color: rgb(235, 240, 241);">
+  <div class="row align-items-start text py-1">
+    <div class="col text">
+      <h1 style="font-weight: bolder; color: #444444;
+text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;;">Display Instagram Stories on any website, <span style="background-color: yellow;">in seconds.</span></h1>
+      <br><br>
+      <p>Display Instagram Stories Widget on your website, that auto-syncs, and updates each time you add a photo in your active story. </p>
+
+      <br><br>
+      <nav class="navbar ">
+  <div class="container-xxl img-fluid">
+    <form class="d-flex" role="search" >
+      <input class="form-control me-0" type="search" placeholder="Enter Your Email" aria-label="Search"/>
+      <button class=" bg-primary text-white btn btn-outline-success" type="submit" style="width: 60%;">Start free trial</button>
+    </form>
+  </div>
+      </nav>
+
+      <div class="days d-flex py-3 mx-2">
+        <p>Free 7-day trial <img src="./image/dot.png" alt=""></p>
+        <p>Easy setup <img src="./image/dot.png" alt=""></p>
+        <p>Cancel any time</p>
+      </div>
+      </div>
+    <div class="col">
+      <img class="img" src="./image/full.png" alt="" style="width: 100%;">
+    </div>
+  </div>
+</div>
+
+    <div class="hero2 px-5 py-5">
+      <p style=" color: gray;  color: #444444;
+      background: #FFFFFF;
+      text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;">Join 50.000+ websites that use EmbedSocial to sell more</p>
+      <div class="imgs d-flex gap-4 logos">
+      <img src="./image/one.png" alt="">
+      <img src="./image/two.png" alt="">
+      <img src="./image/three.png" alt="">
+      <img src="./image/four.png" alt="">
+      <img src="./image/five.png" alt="">
+      <img src="./image/six.png" alt="">
+      </div>
+     </div>
+   </div>
+
+   <!-- hero section end -->
+
+   <!-- widgets section start -->
+
+     <div class="container">
+  <div class="row recipes align-items-start">
+    <div class="col">
+      <img class="" src="./image/recipes.png" alt="" style="width: 100%; height: 100%;" >
+    </div>
+    <div class="col">
+      <h1 style="font-weight: bolder; color: #444444;
+        background: #FFFFFF;
+        text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;">Widgets for every website.</h1>
+
+    <div class=" ">
+        <div class="high" style="padding-top: 25px;">
+        <img src="./image/highlights.png" alt=""><p style="display: inline; margin-left: 10px;">Highlights</p>
+      </div>
+
+      <div class="pop" style="padding-top: 25px;">
+        <img src="./image/popover.png" alt=""><p style="display: inline; margin-left: 10px;">Popover</p>
+      </div>
+
+      <div class="inline" style="padding-top: 25px;">
+        <img src="./image/inline.png" alt=""><p style="display: inline; margin-left: 10px;">Inline slideshows</p>
+      </div>
+
+      <div class="story" style="padding-top: 25px;">
+        <img src="./image/story.png" alt=""><p style="display: inline; margin-left: 10px;">Story list gallery</p>
+      </div>
+
+      <div class="pop" style="padding-top: 25px; width: 40%;">
+        <img src="./image/gallery.png" alt=""><p style="display: inline; margin-left: 10px; color: blue;">Carousel gallery</p>
+      </div>
+    </div>
+
+      
+    </div>
+  </div>
+</div>
+
+    <!-- widgets section end -->
+
+  <!-- live section start -->
+
+    <div class="container-xxl text-center py-5" style="background-color: rgb(213, 231, 236); margin-top: 20px;">
+     <div class="row" style="display: block;">
+     <div class="col">
+      <div class="p-3 hours">
+        <h1 style="display: inline;">Let your story live <span style="background-color: yellow; font-weight: bolder;">more than 24h.</span></h1>
+        <p class="py-4">You've worked hard to create a beautiful Instagram story but it disappears in 24 hours? No worries, use our story saver for Instagram to bring them to life on your website.</p>
+      </div>
+    </div>
+
+    <div class="live d-flex justify-content-center">
+
+      <div class="card" style="width: 15rem;">
+  <img src="./image/insta.png" class="card-img-top" alt="...">
+</div>
+
+
+<div class="card" style="width: 15rem;">
+  <img src="./image/fb.png" class="card-img-top" alt="...">
+  </div>
+
+  <div class="card" style="width: 15rem;">
+  <img src="./image/tiktok.png" class="card-img-top" alt="...">
+</div>
+
+
+<div class="card" style="width: 15rem;">
+  <img src="./image/twitter.png" class="card-img-top" alt="...">
+</div>
+
+
+<div class="card" style="width: 15rem;">
+  <img src="./image/linkedin.png" class="card-img-top" alt="...">
+</div>
+    </div>
+    </div>
+    </div>
+
+  <!-- live section end -->  
+
+  <!-- growth section start -->
+
+   <div class="growth py-5" style="margin-left: 180px;">
+    <h1>Double your <span style="background-color: yellow;">conversions.</span> Double your <span style="background-color: yellow;">growth.</span></h1>
+    <div class="cards d-flex gap-3 py-5">
+      <div class="card" style="width: 18rem;">
+      <div class="card-body" style="background-color: rgb(213, 231, 236)";>
+      <h5 class="card-title">Brands</h5>
+      <p><img src="./image/arrow.png" alt="">&nbsp;&nbsp;Icreases conversions</p>
+      <p class="card-text">Enhance the visual showcase of your products with unique content making visitors convert to buyers.</p>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body" style="background-color: rgb(213, 231, 236)";>
+    <h5 class="card-title">Marketers</h5>
+    <p><img src="./image/clock.png" alt="">&nbsp;&nbsp;Save time</p>
+    <p class="card-text">No more re-purposing, re-cropping or re-uploading the same content from your Instagram stories to your website. </p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body" style="background-color: rgb(213, 231, 236)";>
+    <h5 class="card-title">Web designers</h5>
+    <p><img src="./image/icon.png" alt="">&nbsp;&nbsp;Fresh content</p>
+    <p class="card-text">Every story you post on Instagram, it is automatically saved in your account. Auto updates you unique content.</p>
+  </div>
+</div>
+    </div> 
+
+    <div class="clovin" style="width: 500px; height: 300px; margin-left: 190px;">
+       <center><img src="./image/clovin.png" alt=""></center>
+       <p class="py-2 story">“Storytelling on another level. EmbedStories is great - it takes pride of place on our homepage aggregating stories from our Instagram account. I highly recommend this product. ”.</p>
+       <div class="man d-flex">
+        <img class="" src="./image/man.png" alt="">
+        <h5 class="py-4 ">Ben Calahen, COO at Clovin</h5>
+       </div>
+    </div>
+  </div> 
+  <!-- growth section end -->
+
+  <!-- tempelates section start -->
+
+  <div class="tempelates py-4 my-5" style="background-color: rgb(3, 3, 88); color: white;">
+    <div class="content text-center">
+      <h1 style="font-weight: bolder;">Get started with one of our templates</h1>
+      <p class="para">Start with one of our pre-designed templates. Create, personalize and embed the perfect widget for any page or campaign in just minutes.</p>
+      <div class="btn"><button type="button" class=" my-3 btn btn-primary btn-lg rounded-0">See tempelates demos</button></div>
+    </div>
+
+
+    <!-- card1 -->
+    <div class="fourcards d-flex py-4" style="justify-content: space-evenly;">
+     <div class="card" style="width: 18rem;">
+     <img src="./image/popimage.png" class="card-img-top" alt="popover">
+     <div class="card-body">
+     <h5 class="card-title">Popover</h5>
+     <p class="card-text">Mimics the same functionality of the Instagram Highlights on your website.</p>
+     </div>
+     </div>
+
+     <!-- card2 -->
+     <div class="card" style="width: 18rem;">
+     <img src="./image/highimage.png" class="card-img-top" alt="highlights">
+     <div class="card-body">
+     <h5 class="card-title">Highlights</h5>
+     <p class="card-text">Mimics the same functionality of the Instagram Highlights on your website.</p>
+     </div>
+     </div>
+
+     <!-- card3 -->
+     <div class="card" style="width: 18rem;">
+     <img src="./image/sliderimage.png" class="card-img-top" alt="slider">
+     <div class="card-body">
+     <h5 class="card-title">Slider</h5>
+     <p class="card-text">Display your stories in a full slideshow layout that catches your visitors' attention. </p>
+     </div>
+     </div>
+
+     <!-- card4 -->
+     <div class="card" style="width: 18rem;">
+     <img src="./image/galleryimage.png" class="card-img-top" alt="gallery">
+     <div class="card-body">
+     <h5 class="card-title">Gallery</h5>
+     <p class="card-text">One widget with multiple stories and embed them as a full story gallery on your website. </p>
+     </div>
+     </div>
+    </div>
+  </div>
+
+  <!-- tempelates section end -->
+
+  <!-- pltforms section start -->
+
+  <div class="platforms my-5 container-xxl d-flex gap-4" style="background-color: rgb(213, 231, 236);">
+    <div class="works py-5 " style="width: 40%;">
+        <p style="background-color: rgb(190, 190, 247) ; width: 30%;"><img src="./image/cube.png" alt="">&nbsp;&nbsp;Integrations</p>
+      <h1 style="font-weight: bolder;" class="py-3">Works with 99.9% of web platforms</h1>
+      <p class="py-3">We integrate with tons of other apps, ecoomerce platforms or web builders. Native apps are avaialble, too. </p>
+
+      <div class="chk">
+        <div class="chk1 d-flex">
+        <i class="fa-solid fa-check"></i><p style="margin-left: 10px;">Works with any website</p>
+        </div>
+
+        <div class="chk2 d-flex">
+        <i class="fa-solid fa-check"></i><p style="margin-left: 10px;">No coding required to embed</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="imgplatforms py-4" style="width: 60%;">
+      <img class="image" src="./image/platforms.png" alt="" style="width: 700px;">
+    </div>
+  </div>
+
+  <!-- pltforms section end -->
+
+
+  <!-- customize section start -->
+
+  <div class="cust justify-content-center text-center">
+    <div class="imagee">
+        <h5 style="color: rgb(101, 101, 233);"><img src="./image/customize.png" alt="">&nbsp;Customization</h5>
+
+        <h1 class="py-3">Be on brand. Customize in minutes</h1>
+        <p class="py-3">EmbedStories gives you flexibility in managing the display and looks of the Instagram Stories on your website.</p>
+    </div>
+
+    <div class="data d-flex text-center justify-content-center gap-2">
+        <h6 style="background-color: rgb(213, 231, 236);"><img src="./image/specificdata.png" alt="">&nbsp;Stories from specific date</h6>
+        <h6 style="background-color: rgb(213, 231, 236);"><img src="./image/color.png" alt="">&nbsp;Customize color</h6>
+        <h6 style="background-color: rgb(213, 231, 236);"><img src="./image/followbtn.png" alt="">&nbsp;Follow button</h6>
+        <h6 style="background-color: rgb(213, 231, 236);"><img src="./image/multiple.png" alt="">&nbsp;Multiple layouts</h6>
+        <h6 style="background-color: rgb(213, 231, 236);"><img src="./image/advance.png" alt="">&nbsp;Advance moderation</h6>
+        <h6 style="background-color: rgb(213, 231, 236);"><img src="./image/customcss.png" alt="">&nbsp;Custom CSS</h6>
+
+    </div>
+
+    <div class="book">
+        <img src="./image/recipe book.png" alt="" style="max-width: 100%;">
+    </div>
+  </div>
+
+  <!-- customize section end -->
+
+    <!-- embedit section start -->
+
+  <div class="cust justify-content-center text-center py-5">
+    <div class="imagee">
+        <h5 style="color: rgb(101, 101, 233);"><img src="./image/customize.png" alt="">&nbsp;Customization</h5>
+
+        <h1 class="py-3">Embed it and forget it</h1>
+        <p class="py-3">EmbedStories gives you flexibility in managing the display and looks of the Instagram Stories on your website.</p>
+    </div>
+
+    <div class="data d-flex text-center justify-content-center gap-3">
+        <h6><i class="fa-solid fa-check"></i>&nbsp;Simple instalation. No developers needed</h6>
+        <h6><i class="fa-solid fa-check"></i>&nbsp;Embed on different CMS platforms</h6>
+        <h6><i class="fa-solid fa-check"></i>&nbsp;Auto sync new stories</h6>
+
+    </div>
+
+    <div class="book">
+        <img src="./image/edit.png" alt="" style="max-width: 100%;">
+    </div>
+  </div>
+
+  <!-- embedit section end -->
+
+  <!-- dive section start -->
+
+  <div class="container-xxl">
+    <div class="container-xxl" style="background-color: rgb(235, 240, 241);">
+  <div class="row align-items-start text py-1">
+    <div class="col text">
+      <h1 style="font-weight: bolder; color: #444444;
+text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;;">Ready to dive in? Create your widget today.</h1>
+      <p class="py-2">Display Instagram Stories Widget on your website, that auto-syncs, and updates each time you add a photo in your active story. </p>
+
+      <nav class="navbar ">
+  <div class="container-xxl img-fluid">
+    <form class="d-flex" role="search">
+      <input class="form-control me-0" type="search" placeholder="Search" aria-label="Search"/>
+      <button class=" bg-primary text-white btn btn-outline-success" type="submit" style="width: 60%;">Start free trial</button>
+    </form>
+  </div>
+</nav>
+      </div>
+    <div class="col py-5">
+      <img class="img" src="./image/dive.png" alt="" style="width: 100%;">
+    </div>
+  </div>
+</div>
+
+<!-- dive section end -->
+
+<!-- services section start -->
+
+<div class="services py-5">
+<center><h1>Other features at your service</h1></center>
+
+<div class="cardser1 d-flex mx-5 gap-3 py-3">
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><img src="./image/auto.png" alt="">&nbsp;Auto sync</h5>
+    <p class="card-text">Sync all Instagram stories in a single click and create an widget that you can embed on any website.</p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><img src="./image/responsive.png" alt="">&nbsp;Responsive</h5>
+    <p class="card-text">Mobile-friendly, fully responsive, fits on every display: tablet, mobile, or desktop.</p>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><img src="./image/follow.png" alt="">&nbsp;Follow button</h5>
+    <p class="card-text">Show a Follow button with a link to your Instagram account to help you drive traffic and increase followers.</p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><img src="./image/unlimited.png" alt="">&nbsp;Unlimited widgets</h5>
+    <p class="card-text">Create multiple widgets and embed feeds on various websites from multiple social media platforms.</p>
+  </div>
+</div>
+</div>
+
+
+<div class="cardser2 d-flex mx-5 gap-3 py-3">
+     
+   <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><img src="./image/local.png" alt="">&nbsp;Localization</h5>
+    <p class="card-text">Use the 10+ languages available in the platform to localize the widget for your web visitors.</p>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><img src="./image/filter.png" alt="">&nbsp;Filters (PRO)</h5>
+    <p class="card-text">Use filters by date or keywords. Change the number of pages and post per page in your feed...</p>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><img src="./image/analytics.png" alt="">&nbsp;Analytics</h5>
+    <p class="card-text">Know which Instagram story performs best and the total clicks of the entire widget on your website.</p>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Custom CSS</h5>
+    <p class="card-text">Variety of settings, filters, and a Custom CSS editor to style your social media widget entirely.</p>
+    <img src="./image/custom.png" alt="">
+    </div>
+</div>
+
+</div>
+<center><p>And 12 more features available in all plans...</p></center>
+</div>
+
+<!-- services section end --> 
+
+<!-- first story section start -->
+
+<div class="first py-5 ">
+       <div class="container-xxl">
+    <div class="container-xxl" style="background-color:  rgb(3, 3, 88); border-radius: 3%; color: white;">
+  <div class="row align-items-start text py-1">
+    <div class="col text mx-4" style="padding-top: 150px;">
+      <h1>It was love at first story</h1>
+      <p class="py-2">“Great plugin and amazing support. I trialed several plugins that try to accomplish the same thing. None of them did it as beautifully and as simple as EmbedStories”</p>
+      <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">jacole</h4>
+
+   </div>
+    <div class="col py-3 mx-3">
+      <img class="img" src="./image/girl.png" alt="" style="width: 100%;">
+    </div>
+  </div>
+    </div>
+</div>
+ <!-- first story section end -->
+
+ <!-- love section start -->
+ 
+ <div class="services py-5">
+<center><h1>Our customers love EmbedStories</h1></center>
+<center><h6>Rated 4.8 by our customers on Facebook and Google</h6></center>
+
+<div class="cardser1 d-flex mx-5 gap-3 py-3">
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="./image/terry.png" alt="">
+    <h5 class="card-title my-2" >Terry Dias</h5>
+    <img src="./image/stars.png" alt="">
+    <p class="card-text my-2">I just signed up for a trial and within a couple of hours had a brand new customer testimonials page built on our website as well as sliders...</p>
+    <p style="color: gray; font-size: smaller;"><img src="./image/google.png" alt="">&nbsp;2 weeks ago</p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="./image/james.png" alt="">
+    <h5 class="card-title my-2">James Workman</h5>
+    <img src="./image/stars.png" alt="">
+    <p class="card-text my-2">Seriously impressed by Embed Social.Good job making the app so easy to use.</p>
+    <br><br>
+    <p style="color: gray; font-size: smaller;"><img src="./image/google.png" alt="">&nbsp;2 weeks ago</p>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="./image/ahmad.png" alt="">
+    <h5 class="card-title my-2">Ahmad Vaccaro</h5>
+    <img src="./image/stars.png" alt="">
+    <p class="card-text my-2">Emebed Social and their services is just perfect ! It has made my business life so much easier ! 5 stars!</p>
+    <br>
+    <p style="color: gray; font-size: smaller;"><img src="./image/google.png" alt="">&nbsp;2 weeks ago</p>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="./image/culhan.png" alt="">
+    <h5 class="card-title my-2">Allison Culhane</h5>
+    <img src="./image/stars.png" alt="">
+    <p class="card-text my-2">Awesome products, Superior human support.</p>
+    <br><br><br>
+    <p style="color: gray; font-size: smaller;"><img src="./image/google.png" alt="">&nbsp;2 weeks ago</p>
+    </div>
+</div>
+</div>
+
+
+<div class="cardser2 d-flex mx-5 gap-3 py-3">
+     
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="./image/davis.png" alt="">
+    <h5 class="card-title my-2">Davis Herwitz</h5>
+    <img src="./image/stars.png" alt="">
+    <p class="card-text my-2">I've been on the look out for lots of companies to do what they do, and I've never found any company who are so quick to get in touch and...</p>
+    <br>
+    <p style="color: gray; font-size: smaller;"><img src="./image/google.png" alt="">&nbsp;2 weeks ago</p>
+    </div>
+</div>
+
+
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="./image/jessie.png" alt="">
+    <h5 class="card-title my-2">Jessie Grant</h5>
+    <img src="./image/stars.png" alt="">
+    <p class="card-text my-2">Very impressed. 5 stars!</p>
+    <br><br><br><br>
+    <p style="color: gray; font-size: smaller;"><img src="./image/google.png" alt="">&nbsp;2 weeks ago</p>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="./image/john.png" alt="">
+    <h5 class="card-title my-2">John Smith</h5>
+    <img src="./image/stars.png" alt="">
+    <p class="card-text my-2">Our experience with EmbedStories is very good, very solid, loads fast, looks good.</p>
+    <br><br>
+    <p style="color: gray; font-size: smaller;"><img src="./image/google.png" alt="">&nbsp;2 weeks ago</p>
+    </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="./image/ben.jpg" alt="">
+    <h5 class="card-title my-2">Ben Calahen, COO at Clovin</h5>
+    <img src="./image/stars.png" alt="">
+    <p class="card-text my-2">Storytelling on another level. EmbedStories is great - it takes pride of place on our homepage...</p>
+    <br><br>
+    <p style="color: gray; font-size: smaller;"><img src="./image/google.png" alt="">&nbsp;2 weeks ago</p>
+    </div>
+</div>
+
+</div>
+
+</div>
+<center><p style="color: gray;">Widget powered&nbsp;<img src="./image/embed.png" alt="">&nbsp;by EmbedSocial</p></center>
+</div> -->
+
+<!-- love section end -->
+
+<!-- complete section start -->
+
+ <div class="comp container-xxl">
+
+<div class="more justify-content-center text-center py-4">
+<h1 style="font-weight: bolder;">More than just a widget.</h1>
+<h1 style="font-weight: bolder">A complete <span style="background-color: yellow; ">Stories Platform.</span></h1>
+</div>
+
+<div class="shop d-flex gap-4 py-3">
+    <div class="comple mx-5 img-fluid" style="width: 50%;">
+    <img src="./image/complete.png" alt="" style="max-width: 100%;">
+    </div>
+
+    <div class="contents" style="padding-top: 100px; max-width: 50%;">
+      <p><img src="./image/purse.png" alt="">&nbsp;&nbsp;Shoppable Story</p>
+      <h1 style="font-weight: bolder;">Make your Instagram Stories, Shoppable</h1>
+      <ul class="py-3">
+        <p><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Use the Call to Acton feature and add buy links to the Instagram stories</p>
+        <p><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Use the Call to Acton feature and add buy links to the Instagram stories</p></p>
+      </ul>
+</div>
+</div>
+
+
+</div>
+
+ <!-- complete section end -->
+
+ <!-- complete section2 start -->
+
+<div class="comp container-xxl py-4">
+
+<div class="shop d-flex gap-4 py-3">
+    <div class="contents mx-4" style="padding-top: 100px; max-width: 50%;">
+      <p><img src="./image/ads.png" alt="">&nbsp;&nbsp;Story Ads</p>
+      <h1 style="font-weight: bolder;">Boost your Instagram stories with few clicks</h1>
+      <ul class="py-3">
+        <p class="py-2"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Create Instagram Story Ads in just a few clicks</p>
+        <p class="py-2"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Archive Instagram Stories with EmbesStories and re-use them for Instagram Ads.</p>
+        <p class="py-2"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;<b>Archive Instagram Stories with EmbesStories and re-use them for Instagram Ads.</p></p></b></p>
+      </ul>
+    </div>
+
+    <div class="comple img-fluid" style="max-width: 100%;">
+    <img src="./image/edit2.png" alt="" style="max-width: 100%;">
+    </div>
+</div>
+
+
+</div>
+
+  <!--  complete section2 end -->
+
+  <!-- complete section3 start -->
+
+<div class="comp container-xxl py-4">
+
+<div class="shop d-flex gap-4 py-3">
+
+    <div class="comple img-fluid" style="max-width: 100%;">
+    <img src="./image/edit2.png" alt="" style="max-width: 100%;">
+    </div>
+
+    <div class="contents mx-4" style="padding-top: 100px; max-width: 50%;">
+      <p><img src="./image/reports.png" alt="">&nbsp;&nbsp;Reports and Anayitics</p>
+      <h1 style="font-weight: bolder;">Create. Analyze. Grow.</h1>
+      <ul class="py-3">
+        <p class="py-2"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Analyze conversions, clicks, views</p>
+        <p class="py-2"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Compare metrics between products</p>
+        <p class="py-2"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;See the direct effect.</p>
+      </ul>
+    </div>
+
+</div>
+</div>
+
+<!-- complete section3 end -->
+
+<!-- embedstories start -->
+
+<div class="embed py-4 text-center" style="background-color: rgb(213, 231, 236);">
+  <div class="days my-3">
+    <h1>Try all EmbedStories features 7 days free.</h1>
+    <h6 class="my-3">Reach more with your Instagram stories.</h6>
+
+  </div>
+  <div class="btn my-4">
+    <img src="./image/button.png" alt="" style="max-width: 100%;">
+  </div>
+
+  <div class="free d-flex">
+
+   <div class="card" style="width: 50rem; margin: auto;">
+  <img src="./image/new.png" class="card-img-top" alt="...">
+</div>
+</div>
+
+
+<div class="question">
+ 
+ <div class="asked py-5">
+  <h1>Frequently asked questions</h1>
+  <p>Have a specific question? Check out our Support Center</p>
+</div>
+
+
+<div class="faq w-75" style="margin: auto;">
+  <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <h6><b>Question no 1</b></h6>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, nulla. Velit, vitae? Saepe quisquam velit deserunt, quidem eaque reiciendis vitae!
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <h6><b>Question no 2</b></h6>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, deleniti accusantium! Suscipit, earum laborum aperiam atque quod dolor iusto aut?
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <h6><b>Question no 3</b></h6>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut atque illum exercitationem quia, odit unde sapiente dicta vel illo doloribus.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <h6><b>Question no 4</b></h6>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus modi dolores dicta facere ipsam excepturi nihil vero saepe repudiandae quam!
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- embedstories end -->
+
+<!-- displayed start -->
+
+ <div class="displayed text-center py-5">
+  <div class="newhead">
+    <h1>From the creators of EmbedSocial trusted and displayed on 50,000+ websites</h1>
+  </div>
+
+  <div class="logos py-3">
+    <img src="./image/logos.png" alt="" style="max-width: 100%;">
+  </div>
+ </div>
+  <!-- displayed end -->
+
+  <!--footer start -->
+
+  <div class="create text-center py-5" style="background-color: rgb(213, 231, 236);">
+    <h1>Ready to dive in?</h1>
+    <h1>Create your widget today.</h1>
+    <p class="py-3">Display Instagram Stories Widget on your website, that auto-syncs, and updates each time you add a photo in your active story.</p>
+
+    <div class="trial">
+      <img src="./image/trial.png" alt="" style="max-width: 100%;">
+    </div>
+
+    <p class="py-3" style="font-size: small;">Free 7-day trial <img src="./image/dot.png" alt="">&nbsp;Easy setup <img src="./image/dot.png" alt="">&nbsp;Cancel any time</p>
+
+
+    <div class="product d-flex py-3 text-center container-xxl" style="background-color: rgb(3, 3, 88); color: white;">
+     
+    <div class="social d-flex" style="margin: auto; max-width: 100%;">
+      <div class="" style="width: 15rem;">
+  <div class="card-body" style="background-color:  rgb(3, 3, 88); color: white;">
+    <h5 class="card-title"><img src="./image/social.png" alt="">&nbsp;&nbsp;embedsocial</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id rhoncus suspendisse mattis ultricies adipiscing quam pretium eleifend. </p>
+  </div>
+</div>
+
+<div class="" style="width: 15rem;">
+  <div class="card-body" style="background-color:  rgb(3, 3, 88); color: white;">
+    <h5 class="card-title">Product</h5>
+    <p class="card-text">Reviews management Embed Instagram stories Display Instagram feeds Collect reviews Send email requests</p>
+  </div>
+</div>
+
+<div class="" style="width: 15rem;">
+  <div class="card-body" style="background-color:  rgb(3, 3, 88); color: white;">
+    <h5 class="card-title">Company</h5>
+    <p class="card-text">About EmbedSocial Brand Guidelines Press Kit Support</p>
+  </div>
+</div>
+
+<div class="" style="width: 15rem;">
+  <div class="card-body" style="background-color:  rgb(3, 3, 88); color: white;">
+    <h5 class="card-title">Integrations</h5>
+    <p class="card-text">WordPress Shopify Magento Squarespace Intercom Slack </p>
+  </div>
+</div>
+    </div>
+  </div>
+
+  <!-- footer end -->
+
+<!-- bootstrap javascript link -->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
